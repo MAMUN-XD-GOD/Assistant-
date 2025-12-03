@@ -1,0 +1,12 @@
+{
+  "name": "Alor Poth",
+  "short_name": "AlorPoth",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "icons": [{
+    "src": "assets/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
