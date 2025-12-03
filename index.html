@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alor Poth – Islamic Life System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="assets/logo.png" class="logo">
+        <h1 id="appTitle">Alor Poth</h1>
+        <select id="languageSelector"></select>
+    </header>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+        <div class="card" onclick="openPage('prayer')">
+            <h2>🕌 Prayer Times</h2>
+            <p id="nextPrayer"></p>
+        </div>
+
+        <div class="card" onclick="openPage('dua')">
+            <h2>📖 Dua & Zikr</h2>
+            <p>All daily duas, zikr, adhkar</p>
+        </div>
+
+        <div class="card" onclick="openPage('fitness')">
+            <h2>💪 Fitness</h2>
+            <p>Daily exercises & body progress</p>
+        </div>
+
+        <div class="card" onclick="openPage('routine')">
+            <h2>📅 Daily Routine</h2>
+            <p>Morning → Night schedule</p>
+        </div>
+
+        <div class="card" onclick="openPage('mental')">
+            <h2>🧠 Mind & Motivation</h2>
+            <p>Quotes • Breathing • Mood</p>
+        </div>
+
+        <div class="card" onclick="openPage('finance')">
+            <h2>💰 Finance Tracker</h2>
+            <p>Expense + Savings</p>
+        </div>
+    </section>
+
+    <!-- Dynamic Page Container -->
+    <section id="pageContainer"></section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+          </html>
